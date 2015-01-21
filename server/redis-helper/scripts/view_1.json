@@ -1,0 +1,52 @@
+{
+  "ViewItemName": "FolderViewItem",
+  "ViewItemTraversalAttributeName": "FolderViewItems",
+  "StartItemId": "2",
+  "Definitions": [
+    {
+      "Type": "Folder",
+      "CreateNewViewItem": true,
+      "AttributesToFollow": [
+        "CreatorId",
+        "ContentIds"
+      ],
+      "AttributeMappings": [
+        {
+          "Id": "Folder.Id"
+        },
+        {
+          "ItemType": "Folder.ItemType"
+        }
+      ]
+    },
+    {
+      "Type": "Item",
+      "CreateNewViewItem": true,
+      "AttributesToFollow": [
+        "CreatorId"
+      ],
+      "AttributeMappings": [
+        {
+          "Id": "Item.Id"
+        },
+        {
+          "Name": "Item.Name"
+        },
+        {
+          "Description": "Item.Description"
+        }
+      ]
+    },
+    {
+      "Type": "Creator",
+      "CreateNewViewItem": false,
+      "AttributesToFollow": [
+      ],
+      "AttributeMappings": [
+        {
+          "Name": "Creator.Name"
+        }
+      ]
+    }
+  ]
+}
